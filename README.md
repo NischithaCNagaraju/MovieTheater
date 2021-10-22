@@ -10,7 +10,7 @@ program to maximize both customer satisfaction and customer
 safety. For the purpose of public safety, assume that a buffer of three
 seats and/or one row is required.
 
-#Given Input
+**Given Input**
     - Theater Layout is 10 * 20
     - There are 10 rows i.e A - J . Row 'A' is nearer to the screen.
     - There are 20 seats in each row.
@@ -22,12 +22,12 @@ seats and/or one row is required.
     - Customer Safety
         - A buffer of 3 seats between each reservation.
 
-#Assumptions
+**Assumptions**
     - Seating booking is done from starting (i.e 1st position of a row)
     - Maximum seats that can be reserved is total number of seats per row (i.e 20)
     - Reservation is not split. If the seats cannot be allocated for the entire group, reservation is failed.
 
-#Algorithm
+**Algorithm**
     - Greedy algorithm is chosen to allocate seats
     - Create the Theater Layout Initially.
     - Create movieTheaterSeating Class
@@ -35,10 +35,10 @@ seats and/or one row is required.
     - Allocate the seat and update the layout.
     - Write the final reservation into a output file.
 
-#Class Diagram for the Design
+**Class Diagram for the Design**
 
 
-    #Data Members :
+    **Data Members :**
 	  We need layout of theater[HashMap<Character, ArrayList<Integer>>]
 		We need to save the input [HashMap<String, Integer>]
 		Output [HashMap<String, ArrayList<String>>]
@@ -46,7 +46,7 @@ seats and/or one row is required.
 		Number of rows : J-A = 10
 		total number of seats = 200
 
-	#Member Functions:
+	**Member Functions:**
 		Constructor : populate the theatre layout
 		parseInputFile
 		validateInput
